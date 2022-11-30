@@ -24,7 +24,7 @@ public class MainActivity2 extends AppCompatActivity {
         buttonAceptar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ActivityListProduct.class);
                 startActivity(intent);
             }
         });

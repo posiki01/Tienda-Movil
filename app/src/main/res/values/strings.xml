@@ -2,10 +2,10 @@
     <string name="app_name">Proyecto</string>
     <string name="title_activity_main2">MainActivity2</string>
     //String MainActivity
-    <string name="textTitulo">Bienvenido al Gangazo</string>
+    <string name="textTitulo">El Gangazo</string>
     <string name="textName">Nombre:</string>
     <string name="textLastName">Apellido:</string>
     <string name="textAge">Edad:</string>
-    <string name="buttonRegistro">Registro</string>
+    <string name="buttonSesion">Iniciar sesion</string>
 
 </resources>

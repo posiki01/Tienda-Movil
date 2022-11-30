@@ -1,26 +1,17 @@
-package entidades;
+package com.example.ejercicio.Entidades;
 
-public class Producto {
-    private int id;
+public class Product {
+
     private int image;
     private String name;
     private String description;
     private int price;
 
-    public Producto(int id, int image, String name, String description, int price) {
-        this.id = id;
+    public Product(int image, String name, String description, int price) {
         this.image = image;
         this.name = name;
         this.description = description;
         this.price = price;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public int getImage() {

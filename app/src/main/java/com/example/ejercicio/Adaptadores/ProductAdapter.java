@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -54,7 +55,7 @@ public class ProductAdapter extends BaseAdapter {
         TextView textviewProductName =(TextView) convertView.findViewById(R.id.textviewProductName);
         TextView textViewProductDescription=(TextView) convertView.findViewById(R.id.textViewProductDescription);
         TextView textViewProductPrice =(TextView) convertView.findViewById(R.id.textViewProductPrice);
-        Button buttonProduct =(Button) convertView.findViewById(R.id.buttonProduct);
+        ImageButton imagecarro =(ImageButton) convertView.findViewById(R.id.imagecarro);
 
 
         imageProduct.setImageResource(product.getImage());

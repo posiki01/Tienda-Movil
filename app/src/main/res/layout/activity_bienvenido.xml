@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/fondo4"
-    tools:context=".MainActivity">
+    tools:context=".bienvenido">
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:fontFamily="sans-serif-black"
-                android:text="@string/textuser"
+                android:text="@string/textName"
                 android:textColor="@color/black"
                 android:textSize="30dp" />
 
@@ -64,6 +65,79 @@
 
                 android:ems="10"
                 android:inputType="textPersonName" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textLastName"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/textAge"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Telefono:"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/editTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:ems="10"
+                android:inputType="textPersonName" />
+
 
         </LinearLayout>
 
@@ -92,18 +166,18 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="144dp"
-            android:gravity="center"
-            android:orientation="vertical">
+        <!--    <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="144dp"
+                android:gravity="center"
+                android:orientation="vertical">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="39dp"
-                android:layout_weight="10" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_weight="10" />
 
-        </LinearLayout>
+            </LinearLayout>-->
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -112,28 +186,15 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/btnInicio"
+                android:id="@+id/buttonRegistro"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+
                 android:text="@string/buttonSesion" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textSize="20dp"
-                android:text="Registrate" />
-
-            <Button
-                android:id="@+id/btnRegistro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Registrarse" />
         </LinearLayout>
 
 
     </LinearLayout>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

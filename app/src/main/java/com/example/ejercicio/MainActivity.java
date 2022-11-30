@@ -2,6 +2,7 @@ package com.example.ejercicio;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -12,45 +13,34 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    private Button btnInicio;
+    private Button btnRegistro;
 
-    private Button buttonRegistro;
-    private EditText editName, editLastName, editAge;
-    private TextView textName, textLastName, textAge;
+
+
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnInicio = (Button) findViewById(R.id.btnInicio);
+        btnRegistro = (Button) findViewById(R.id.btnRegistro);
 
-        buttonRegistro = (Button) findViewById(R.id.buttonRegistro);
-
-        editName = (EditText) findViewById(R.id.editName);
-        editLastName = (EditText) findViewById(R.id.editLastName);
-        editAge = (EditText) findViewById(R.id.editAge);
-
-        textName = (TextView) findViewById(R.id.textName);
-        textLastName = (TextView) findViewById(R.id.textLastName);
-        textAge = (TextView) findViewById(R.id.textAge);
-
-        buttonRegistro.setOnClickListener(new View.OnClickListener() {
+        btnInicio.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+
+                Intent intent = new Intent(getApplicationContext(),ActivityListProduct.class);
                 startActivity(intent);
-
             }
+        });
 
-                /*ejercicio clase
-                String num1 = editName.getText().toString().trim();
-                String num2 = editLastName.getText().toString().trim();
-                Log.d("num1",String.valueOf(num1));
-                Log.d("num2",String.valueOf(num2));
-                String suma = num1 + " " + num2;
-                Log.d("suma",String.valueOf(suma));
-                Toast toast = Toast.makeText(getApplicationContext(),String.valueOf(suma), Toast.LENGTH_LONG);
-                toast.show();*/
-
-
-
+        btnRegistro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),bienvenido.class);
+                startActivity(intent);
+            }
         });
     }
 }

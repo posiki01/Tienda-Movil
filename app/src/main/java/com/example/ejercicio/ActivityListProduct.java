@@ -30,7 +30,9 @@ public class ActivityListProduct extends AppCompatActivity {
         Product product3 = new Product(R.drawable.product3,"Control","Control pega inalambrico", 75000);
         Product product4 = new Product(R.drawable.product4,"Control","Control turtle beach Alambrico", 130000);
         Product product5 = new Product(R.drawable.product5,"Diadema","Diadema de cable ", 80000);
-        Product product6 = new Product(R.drawable.product5,"Diadema1","Diadema de cable ", 80000);
+
+        Product product9 = new Product(R.drawable.trapero,"Trapero","trapero con balde ", 50000);
+        Product product10 = new Product(R.drawable.bici,"Bicicleta","Bicicleta infantil color azul", 560000);
 
 
         arrayProducts.add(product1);
@@ -38,7 +40,9 @@ public class ActivityListProduct extends AppCompatActivity {
         arrayProducts.add(product3);
         arrayProducts.add(product4);
         arrayProducts.add(product5);
-        arrayProducts.add(product6);
+
+        arrayProducts.add(product9);
+        arrayProducts.add(product10);
         productAdapter = new ProductAdapter(this,arrayProducts);
         listViewProducts.setAdapter(productAdapter);;
 

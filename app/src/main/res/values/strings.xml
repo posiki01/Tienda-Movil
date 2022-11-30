@@ -7,5 +7,6 @@
     <string name="textLastName">Apellido</string>
     <string name="textAge">Edad     </string>
     <string name="buttonRegistro">Registro</string>
+    <string name="text"></string>
 
 </resources>

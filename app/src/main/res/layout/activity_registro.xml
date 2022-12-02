@@ -16,16 +16,15 @@
 
 
         <TextView
-            android:id="@+id/textTitulo"
+            android:id="@+id/textTituloRegistro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/textTitulo"
+            android:text="@string/textTituloRegistro"
             android:textColor="@color/black"
             android:textSize="40dp"
 
 
             android:textStyle="bold" />
-
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -49,11 +48,11 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textName"
+                android:id="@+id/textUserBienvenido"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:fontFamily="sans-serif-black"
+
                 android:text="@string/textName"
                 android:textColor="@color/black"
                 android:textSize="30dp" />
@@ -126,7 +125,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Telefono:"
+                android:text="@string/textTelefono"
                 android:textColor="@color/black"
                 android:textSize="30dp" />
 
@@ -151,7 +150,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Contraseña:"
+                android:text="@string/textPassword"
                 android:textColor="@color/black"
                 android:textSize="30dp" />
 

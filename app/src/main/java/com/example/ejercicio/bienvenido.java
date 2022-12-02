@@ -17,7 +17,7 @@ public class bienvenido extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bienvenido);
+        setContentView(R.layout.activity_registro);
 
         buttonRegistro = (Button) findViewById(R.id.buttonRegistro);
 

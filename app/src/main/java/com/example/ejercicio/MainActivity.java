@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnInicio = (Button) findViewById(R.id.btnInicio);
-        btnRegistro = (Button) findViewById(R.id.btnRegistro);
+        btnRegistro = (Button) findViewById(R.id.btnRegistroMain);
 
         btnInicio.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -9,10 +9,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class bienvenido extends AppCompatActivity {
+public class MainActivityRegisto extends AppCompatActivity {
     private Button buttonRegistro;
     private EditText editName, editLastName, editAge;
-    private TextView textName, textLastName, textAge;
+    private TextView textNameRegistro, textLastName, textAge;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,14 +25,14 @@ public class bienvenido extends AppCompatActivity {
         editLastName = (EditText) findViewById(R.id.editLastName);
         editAge = (EditText) findViewById(R.id.editAge);
 
-        textName = (TextView) findViewById(R.id.textName);
+        textNameRegistro = (TextView) findViewById(R.id.textNameRegistro);
         textLastName = (TextView) findViewById(R.id.textLastName);
         textAge = (TextView) findViewById(R.id.textAge);
 
         buttonRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity2.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
 
             }

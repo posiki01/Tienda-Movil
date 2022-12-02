@@ -3,7 +3,7 @@
     <string name="title_activity_main2">MainActivity2</string>
     //String activity_registro
     <string name="textTituloRegistro">El Gangazo</string>
-    <string name="textName">Nombre:</string>
+    <string name="textNameRegisto">Nombre:</string>
     <string name="textLastName">Apellido:</string>
     <string name="textAge">Edad:</string>
     <string name="textTelefono">Telefono:</string>

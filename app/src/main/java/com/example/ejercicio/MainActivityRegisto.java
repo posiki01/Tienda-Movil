@@ -32,7 +32,7 @@ public class MainActivityRegisto extends AppCompatActivity {
         buttonRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivityInicioSesion.class);
                 startActivity(intent);
 
             }

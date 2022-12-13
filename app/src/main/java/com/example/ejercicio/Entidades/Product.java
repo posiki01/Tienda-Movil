@@ -1,24 +1,48 @@
 package com.example.ejercicio.Entidades;
 
-public class Product {
+import java.util.UUID;
 
-    private int image;
+public class Product {
+    private String id;
+    private byte[] image;
     private String name;
     private String description;
     private int price;
 
-    public Product(int image, String name, String description, int price) {
+    public Product(String name, String description, int price,byte[] image) {
+        this.id = UUID.randomUUID().toString();
         this.image = image;
         this.name = name;
         this.description = description;
         this.price = price;
     }
+    public Product(String id, String name, String description, int price,byte[] image) {
+        this.id = id;
+        this.image = image;
+        this.name = name;
+        this.description = description;
+        this.price = price;
+    }
+    public Product(String id, String name, String description, int price) {
+        this.id = id;
+        this.name = name;
+        this.description = description;
+        this.price = price;
 
-    public int getImage() {
+    }
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public byte[] getImage() {
         return image;
     }
 
-    public void setImage(int image) {
+    public void setImage(byte[] image) {
         this.image = image;
     }
 
@@ -46,3 +70,4 @@ public class Product {
         this.price = price;
     }
 }
+

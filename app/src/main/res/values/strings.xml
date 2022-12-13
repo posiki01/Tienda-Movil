@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">El gangazo</string>
+    <string name="app_name">Tecno Store</string>
     <string name="title_activity_main2">MainActivity2</string>
     //String activity_registro
-    <string name="textTituloRegistro">El Gangazo</string>
+    <string name="textTituloRegistro">Tecno Store</string>
     <string name="textNameRegisto">Nombre:</string>
     <string name="textLastName">Apellido:</string>
     <string name="textAge">Edad:</string>
@@ -10,11 +10,35 @@
     <string name="textPassword">Contraseña:</string>
     <string name="buttonSesion">Registrar</string>
 
-    //String ativity_main
-    <string name="textTituloMain">Bienvenido</string>
-    <string name="textPasswordMain">Clave</string>
-    <string name="buttonSesionMain">Ingresar</string>
-    <string name="btnRegistroMain">Registrar</string>
+    //String ativity_inicio_sesion
+    <string name="textTituloSesion">Bienvenido</string>
+    <string name="textNameSesion">Usuario</string>
+    <string name="textPasswordSesion">Clave</string>
+    <string name="buttonIngresarSesion">Ingresar</string>
+    <string name="btnRegistroSesion">Registrar</string>
+    //String activity_main_bienvenido
+    <string name="textRegistroWelcome">Bienvenido</string>
+    <string name="buttonAceptarWelcome">Aceptar</string>
+
+    //String activity_list_product
+    <string name="textTituloListProduct">Productos</string>
+
+    //String activity_main2
+    <string name="btnReview">Volver</string>
+
+    //String activity_bienvenido
+    <string name="textRegistro">Bienvenido</string>
+    <string name="buttonWelcome"></string>
+
+    //String activity_product_form
+    <string name="textTittleForm">Producto</string>
+    <string name="textViewFormName">Nombre:</string>
+    <string name="textViewFormDescription">Descripcion:</string>
+    <string name="textViewFormPrice">Precio:</string>
+    <string name="btnFormRegistrar">Registrar</string>
+
+
+
 
 
 

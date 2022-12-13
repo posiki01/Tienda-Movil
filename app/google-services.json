@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "325994723537",
+    "firebase_url": "https://tienda-movil-4f340-default-rtdb.firebaseio.com",
+    "project_id": "tienda-movil-4f340",
+    "storage_bucket": "tienda-movil-4f340.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:325994723537:android:e7f3990e1abfac03672df0",
+        "android_client_info": {
+          "package_name": "com.example.ejercicio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "325994723537-q4orr2c8fm6c9b4hfu0rjhn2s8eeaa30.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6nUfc-0aV4K2R5Unr-5td4rEEGlH15nY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "325994723537-q4orr2c8fm6c9b4hfu0rjhn2s8eeaa30.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -20,7 +20,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class DBFirebase {
-    FirebaseFirestore db;
+    private FirebaseFirestore db;
 
     public DBFirebase() {
         this.db = FirebaseFirestore.getInstance();
@@ -32,6 +32,8 @@ public class DBFirebase {
         prod.put("name", product.getName());
         prod.put("description", product.getDescription());
         prod.put("price", product.getPrice());
+        prod.put("image", product.getImage());
+
         // Add a new document with a generated ID
         db.collection("products").add(prod);
 
@@ -48,11 +50,14 @@ public class DBFirebase {
                                        document.getData().get("id").toString(),
                                        document.getData().get("name").toString(),
                                        document.getData().get("description").toString(),
-                                       Integer.parseInt(document.getData().get("price").toString())
+                                       Integer.parseInt(document.getData().get("price").toString()),
+                                       document.getData().get("image").toString()
                                );
                                list.add(product);
                             }
                             productAdapter.notifyDataSetChanged();
+                        }else{
+                            Log.e("Error document", "Error getting documents",task.getException());
                         }
                     }
                 });

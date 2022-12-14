@@ -47,21 +47,25 @@ public class ActivityListProduct extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_product);
 
-        listViewProducts = (ListView) findViewById(R.id.listViewProducts);
+        //listViewProducts = (ListView) findViewById(R.id.listViewProducts);
         arrayProducts = new ArrayList<>();
+        productService = new ProductService();
 
 
         try {
             dbHelper = new DBHelper(this);
             dbFirebase = new DBFirebase();
-            productService = new ProductService();
-            arrayProducts = productService.cursorToArrayList(dbHelper.getProducts());
+            //dbFirebase = new DBFirebase();
+            //productService = new ProductService();
+            //
         }catch (Exception e){
             Log.e("DB Get", e.toString());
         }
-
+        //arrayProducts = productService.cursorToArrayList(dbHelper.getProducts());
+        listViewProducts = (ListView) findViewById(R.id.listViewProducts);
         productAdapter = new ProductAdapter(this, arrayProducts);
         listViewProducts.setAdapter(productAdapter);
+
 
         dbFirebase.getProducts(productAdapter, arrayProducts);
     }

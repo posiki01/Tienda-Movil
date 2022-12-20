@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteStatement;
 import com.example.ejercicio.Entidades.Product;
 
 public class DBHelper extends SQLiteOpenHelper {
-    private final SQLiteDatabase sqLiteDatabase;
+    private  SQLiteDatabase sqLiteDatabase;
 
     public  DBHelper(Context context){
         super(context, "StoreMobile.db",null, 1);
@@ -18,11 +18,11 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("CREATE TABLE PRODUCTS("+
-                "id VARCHAR PRIMARY KEY,"+
-                "name VARCHAR,"+
-                "description VARCHAR,"+
-                "price VARCHAR,"+
-                "image BLOB"+
+                "id TEXT PRIMARY KEY,"+
+                "name TEXT,"+
+                "description TEXT,"+
+                "price TEXT,"+
+                "image TEXT"+
                 ")");
 
     }
@@ -38,11 +38,11 @@ public class DBHelper extends SQLiteOpenHelper {
         SQLiteStatement statement = sqLiteDatabase.compileStatement(sql);
         statement.clearBindings();
 
-        statement.bindString(0, product.getId());
-        statement.bindString(1, product.getName());
-        statement.bindString(2, product.getDescription());
-        statement.bindString(3, String.valueOf(product.getPrice()));
-        statement.bindBlob(4, product.getImage());
+        statement.bindString(1, product.getId());
+        statement.bindString(2, product.getName());
+        statement.bindString(3, product.getDescription());
+        statement.bindString(4, String.valueOf(product.getPrice()));
+        statement.bindString(5, product.getImage());
 
         statement.executeInsert();
     }
